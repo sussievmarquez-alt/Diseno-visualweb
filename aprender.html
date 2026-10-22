@@ -5,24 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Para aprender más | UVM Wiki</title>
 <link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="integracion.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-<style type="text/css">
-body,td,th {
-    font-family: "Open Sans", sans-serif;
-    color: #9C2CC2;
-}
-</style>
+
 </head>
 <body>
-<header class="encabezado">
-    <div class="logo">UVM <span>WIKI</span></div>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="concepto.html">Concepto</a>
-        <a href="elementos.html">Elementos</a>
-        <a class="activo" href="aprender.html">Para aprender más</a>
-    </nav>
+<header class="barra-superior">
+  <a class="marca" href="https://uvmwiki.dreamhosters.com/index.html" aria-label="WikiDesign, ir al inicio">
+    <img src="assets/logo-principal.png" alt="WikiDesign">
+  </a>
+  <nav aria-label="Navegación principal">
+    <a href="https://uvmwiki.dreamhosters.com/index.html">Inicio</a>
+    <a href="https://uvmwiki.dreamhosters.com/colabora/">Colabora</a>
+    <a href="https://uvmwiki.dreamhosters.com/nosotros/">Nosotros</a>
+  </nav>
 </header>
+<aside class="sidebar" aria-label="Menú lateral de temas"></aside>
 
 <main>
 <section class="portada">
@@ -38,8 +36,9 @@ body,td,th {
     <p>En esta sección no encontrarás información aburrida, sino fuentes interesantes que te ayudarán a comprender la importancia del diseño visual web, sus principales elementos y su relación con la experiencia del usuario. Al final, podráss consultar  fuentes bibliográficas para profundizar en el tema.</p>
     <h2>RECURSO 1: INFOGRAFÍA</h2>
 <p>Para comprender y recordar como diseñar visualmente un sitio web de forma efectiva. A continuación:</p>
-    <p><img src="Infografía_diseño.visual.web.jpg" width="946" height="992" alt=""/></p>
-    <h1>RECURSO 2: STORYTELLING</h1>
+    <p>&nbsp;</p>
+    <img src="Infografi╠üa_disen╠âo.visual.web.jpg" width="946" height="992" alt=""/>
+<h1>RECURSO 2: STORYTELLING</h1>
 <div class="tarjetas">
       <article class="tarjeta">
         <div class="numero">&nbsp;</div>
@@ -64,6 +63,11 @@ body,td,th {
 
     <p style="margin-top:25px;">Estos recursos complementan la información presentada en UVM Wiki y permiten seguir explorando cómo el diseño visual contribuye a crear sitios web comprensibles, atractivos y funcionales.</p>
 </section>
+	
+<div class="volver-inicio">
+    <a href="index.html">← Volver al inicio</a>
+</div>
+
 </main>
 
 <footer>
@@ -71,6 +75,7 @@ body,td,th {
     <a href="privacidad.html">Aviso de privacidad</a>
     <p class="copyright">Proyecto académico | Todos los derechos reservados</p>
 </footer>
+<script src="js/menu-temas.js"></script>
 </body>
 </html>
 ```

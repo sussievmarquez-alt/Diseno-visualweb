@@ -5,18 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elementos | UVM Wiki</title>
 <link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="integracion.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="encabezado">
-    <div class="logo">UVM <span>WIKI</span></div>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="concepto.html">Concepto</a>
-        <a class="activo" href="elementos.html">Elementos</a>
-        <a href="aprender.html">Para aprender más</a>
-    </nav>
+<header class="barra-superior">
+  <a class="marca" href="https://uvmwiki.dreamhosters.com/index.html" aria-label="WikiDesign, ir al inicio">
+    <img src="assets/logo-principal.png" alt="WikiDesign">
+  </a>
+  <nav aria-label="Navegación principal">
+    <a href="https://uvmwiki.dreamhosters.com/index.html">Inicio</a>
+    <a href="https://uvmwiki.dreamhosters.com/colabora/">Colabora</a>
+    <a href="https://uvmwiki.dreamhosters.com/nosotros/">Nosotros</a>
+  </nav>
 </header>
+<aside class="sidebar" aria-label="Menú lateral de temas"></aside>
 
 <main>
 <section class="portada">
@@ -88,12 +91,18 @@
 
     <p style="margin-top:30px;"><strong>Fuente de consulta:</strong> Wolf agencia de marketing digital (2023). <a href="https://wolfagenciademarketing.com/definicion-de-diseno-visual-de-un-sitio-web/" target="_blank" rel="noopener">Definición de diseño visual en sitios web y su importancia en la experiencia del usuario.</a></p>
 </section>
+	
+<div class="volver-inicio">
+    <a href="index.html">← Volver al inicio</a>
+</div>
+
 	</main>
 <footer>
   <p>UVM WIKI · Diseño Visual Web</p>
     <a href="privacidad.html">Aviso de privacidad</a>
     <p class="copyright">Proyecto académico | Todos los derechos reservados</p>
 </footer>
+<script src="js/menu-temas.js"></script>
 </body>
 </html>
 ```

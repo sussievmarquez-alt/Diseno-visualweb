@@ -382,3 +382,26 @@ footer a {
     line-height: 1.8;
     margin-bottom: 25px;
 }
+
+/* Botón para regresar al inicio */
+.volver-inicio {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.volver-inicio a {
+    display: inline-block;
+    background-color: #1A1C40;
+    color: #FFFFFF;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.volver-inicio a:hover {
+    background-color: #7D8C46;
+    color: #FFFFFF;
+}
+

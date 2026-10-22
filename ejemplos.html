@@ -6,24 +6,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Storytelling visual | UVM Wiki</title>
 <link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="integracion.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-<style type="text/css">
-body,td,th {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20 px;
-}
-</style>
+
 </head>
 <body>
-<header class="encabezado">
-    <div class="logo">UVM <span>WIKI</span></div>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="concepto.html">Concepto</a>
-        <a href="elementos.html">Elementos</a>
-        <a href="aprender.html">Para aprender más</a>
-    </nav>
+<header class="barra-superior">
+  <a class="marca" href="https://uvmwiki.dreamhosters.com/index.html" aria-label="WikiDesign, ir al inicio">
+    <img src="assets/logo-principal.png" alt="WikiDesign">
+  </a>
+  <nav aria-label="Navegación principal">
+    <a href="https://uvmwiki.dreamhosters.com/index.html">Inicio</a>
+    <a href="https://uvmwiki.dreamhosters.com/colabora/">Colabora</a>
+    <a href="https://uvmwiki.dreamhosters.com/nosotros/">Nosotros</a>
+  </nav>
 </header>
+<aside class="sidebar" aria-label="Menú lateral de temas"></aside>
 
 <main>
 <section class="portada">
@@ -58,7 +56,7 @@ body,td,th {
     <article class="tarjeta">
         <h3>Orden, estética y funcionalidad= mayor comodidad</h3>
 <div class="espacio-imagen">
-            <img src="habitación.ordenada.jpg"
+            <img src="habitacio╠ün.ordenada.jpg"
                  alt="Habitación ordenada y armoniosa"
                  width="480" height="500">
           <p>&nbsp;</p>
@@ -102,6 +100,11 @@ body,td,th {
       <p>Así como una habitación organizada mejora la estancia, un sitio web bien diseñado visualmente mejora la experiencia de navegación. La clave está en combinar estética, orden y funcionalidad para asegurar una visita más confortable para los internautas y los huéspedes.</p>
 </div>
 </section>
+	
+<div class="volver-inicio">
+    <a href="index.html">← Volver al inicio</a>
+</div>
+
 </main>
 
 <footer>
@@ -109,6 +112,7 @@ body,td,th {
     <a href="privacidad.html">Aviso de privacidad</a>
     <p class="copyright">Proyecto académico | Todos los derechos reservados</p>
 </footer>
+<script src="js/menu-temas.js"></script>
 </body>
 </html>
 ```

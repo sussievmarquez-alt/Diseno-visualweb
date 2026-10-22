@@ -1,0 +1,19 @@
+WIKIDESIGN INTEGRADO — INSTRUCCIONES
+
+1. Descomprime la carpeta completa.
+2. En Dreamweaver, abre la carpeta como sitio local (Sitio > Nuevo sitio o Administrar sitios).
+3. Selecciona esta carpeta completa, no solo index.html.
+4. Abre index.html y usa Vista previa en navegador.
+5. No muevas por separado los archivos: deben conservarse las carpetas assets e icons, js y los archivos CSS.
+
+Integración realizada:
+- Se conserva el contenido académico de Etapa 4 Dreamweaver.
+- Se añade el menú lateral de temas basado en el archivo del grupo.
+- Se añade el encabezado central con el logo y los enlaces proporcionados:
+  Inicio: https://uvmwiki.dreamhosters.com/index.html
+  Colabora: https://uvmwiki.dreamhosters.com/colabora/
+  Nosotros: https://uvmwiki.dreamhosters.com/nosotros/
+- El menú lateral usa js/menu-temas.js y assets/icons/.
+- integracion.css controla la posición del encabezado, el menú lateral y el espacio del contenido.
+
+Nota: Los enlaces del encabezado apuntan a las direcciones en línea que proporcionaste; para navegación local se puede cambiar después si lo necesitas.
