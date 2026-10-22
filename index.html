@@ -9,12 +9,33 @@
 <link rel="stylesheet" href="integracion.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     
+<style>
+/* Ajustes de respaldo para que el logo y el menú lateral siempre sean visibles */
+.barra-superior { display:flex; align-items:center; gap:24px; min-height:78px; }
+.barra-superior .marca { display:block; flex:0 0 190px; width:190px; max-width:100%; }
+.barra-superior .marca img { display:block !important; width:190px !important; max-width:100% !important; height:auto !important; visibility:visible !important; opacity:1 !important; object-fit:contain; }
+.sidebar { position:fixed; top:78px; bottom:0; left:0; width:250px; max-height:calc(100vh - 78px); overflow-y:auto; display:block !important; visibility:visible !important; z-index:95; background:#0F1926; }
+.sidebar .panel-menu.temas { display:block !important; visibility:visible !important; min-height:160px; padding:16px; background:#57568C; color:#D9D9D9; }
+.sidebar .panel-menu.temas > summary { display:block; color:#D9D9D9; font-weight:700; cursor:pointer; padding:8px 0 14px; }
+.sidebar .menu-respaldo { list-style:none; padding:0; margin:0; }
+.sidebar .menu-respaldo li { margin:0 0 12px; }
+.sidebar .menu-respaldo a { display:flex; align-items:center; gap:9px; color:#D9D9D9; font-size:13px; line-height:1.35; text-decoration:none; }
+.sidebar .menu-respaldo a:hover { color:#FFFFFF; text-decoration:underline; }
+.sidebar .menu-respaldo img { display:block; width:20px; height:20px; object-fit:contain; }
+body > main { margin-left:250px; width:calc(100% - 250px); }
+body > footer { margin-left:250px; }
+@media(max-width:700px) {
+ .barra-superior { position:relative; flex-wrap:wrap; justify-content:center; }
+ .sidebar { position:relative; top:auto; bottom:auto; width:100%; max-height:none; }
+ body > main, body > footer { margin-left:0; width:100%; }
+}
+</style>
 </head>
 
 <body>
     <header class="barra-superior">
-  <a class="marca" href="https://uvmwiki.dreamhosters.com/index.html" aria-label="WikiDesign, ir al inicio">
-    <img src="assets/logo-principal.png" alt="WikiDesign">
+  <a class="marca" href="index.html" aria-label="WikiDesign, ir al inicio">
+    <img src="assets/logo-principal.png" alt="WikiDesign" style="display:block;width:190px;max-width:100%;height:auto;min-height:1px;object-fit:contain;">
   </a>
   <nav aria-label="Navegación principal">
     <a href="https://uvmwiki.dreamhosters.com/index.html">Inicio</a>
@@ -22,7 +43,23 @@
     <a href="https://uvmwiki.dreamhosters.com/nosotros/">Nosotros</a>
   </nav>
 </header>
-<aside class="sidebar" aria-label="Menú lateral de temas"></aside>
+<aside class="sidebar" aria-label="Menú lateral de temas">
+  <details class="panel-menu temas" open>
+    <summary>Temas</summary>
+    <nav aria-label="Temas">
+      <ul class="menu-respaldo">
+        <li><a href="https://danabiu.github.io/wiki-experiencia-usuario/"><img src="assets/icons/experiencia-usuario.png" alt=""> Experiencia de usuario</a></li>
+        <li><a href="https://wikidigitaldigitaldesign.netlify.app"><img src="assets/icons/diseno-web.png" alt=""> Diseño web</a></li>
+        <li><a href="https://uvmwiki.dreamhosters.com/eqp27/"><img src="assets/icons/design-thinking.png" alt=""> Design thinking</a></li>
+        <li><a href="https://wikipareja28.github.io/A9_PAREJA28-/"><img src="assets/icons/diseno-centrado-usuario.png" alt=""> Diseño centrado en el usuario</a></li>
+        <li><a href="https://elizabethvzago.github.io/WikidesignMariayEli-dis-interaccion/"><img src="assets/icons/diseno-interaccion.png" alt=""> Diseño de interacción</a></li>
+        <li><a href="https://uvmwiki.dreamhosters.com/eqp22/"><img src="assets/icons/arquitectura-informacion.png" alt=""> Arquitectura de la información</a></li>
+        <li><a href="https://uvmwiki.dreamhosters.com/eqp25/"><img src="assets/icons/diseno-navegacion.png" alt=""> Diseño de navegación</a></li>
+        <li><a href="https://uvmwiki.dreamhosters.com/eqp25/"><img src="assets/icons/diseno-visual.png" alt=""> Diseño visual</a></li>
+      </ul>
+    </nav>
+  </details>
+</aside>
 
     <main>
         <section class="portada">
@@ -74,7 +111,8 @@
 <h3>Storytelling del diseño visual web</h3>
 <img src="storytelling" width="150" height="147" alt=""/>
                     <p>Compara una habitación desordenada con una organizada y descubre su relación con una página web.</p>
-<a href="./ejemplos.html">Ver ejemplo →</a>              </article>
+<a href="ejemplos.html">Ver ejemplo →</a>
+              </article>
             </div>
         </section>
 
